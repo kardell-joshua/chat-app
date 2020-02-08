@@ -10,11 +10,15 @@ $('document').ready(function() {
     });
 
     socket.on('message', function(msg) {
+        let time = new Date();
+
         if (!msg) {
             return;
         }
+
         $('#history').append([
-            $('<p>', { class: 'message' }).text(msg),
+            $('<p>', { class: 'time' }).text('Posted at: ' + time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true})),
+            $('<p>', { class: 'message past-message' }).text(msg),
             $('<div>', { class: 'clear' })
         ]);
         $('#history').scrollTop($('#history')[0].scrollHeight);

@@ -6,28 +6,28 @@
         <title>Chat App</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" media="screen" href="ios.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+            crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
         <script src="/socket.io/socket.io.js"></script>
         <script src="main.js"></script>
     </head>
     <body>
-        <main>
-            <section id="history">
-                <p>Hey!</p>
-                <div class="clear"></div>
-                <p>Hi there!</p>
-            </section>
+        <div class="container">
+            <h1>Chat App</h1>
+            <div id="wrapper">
+                <div id="history" class="row">
+  
+                </div>
+            </div>
             <br>
             <div>
                 <form>
-                    <div class="left">
-                        <input id="message">
-                    </div>
-                    <div class="right">
-                        <button>Send</button>
-                    </div>
+                    <input id="message">
+                    <button id="submit-button">Send</button>
                 </form>
             </div>
-        </main>
+        </div>
     </body>
 </html>
