@@ -15,14 +15,22 @@
     </head>
     <body>
         <div class="container">
-            <h1>Chat App</h1>
-            <div id="wrapper">
-                <div id="history" class="row">
+            <span class="row header">
+                <h1 id="header-text-chat">Chat App</h1>
+                <h1> / </h1>
+                <h1 id="header-text-task">Task List</h1>
+            </span>
+            <div id="chat-wrapper" class="row">
+                <div id="history" >
   
                 </div>
             </div>
-            <br>
-            <div>
+            <div id="task-wrapper" class="row">
+                <div id="history" >
+  
+                </div>
+            </div>
+            <div class="row">
                 <form>
                     <input id="message">
                     <button id="submit-button">Send</button>

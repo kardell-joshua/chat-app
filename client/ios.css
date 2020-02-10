@@ -5,6 +5,21 @@ body, html {
 
 h1 {
     text-align: center;
+    display: inline;
+}
+
+.header {
+    width: 50%;
+    height: 50px;
+    margin: auto;
+}
+
+#header-text-chat {
+    color: #d3d3d3;
+}
+
+#header-text-chat:hover, #header-text-task:hover {
+    cursor: pointer;
 }
 
 p {
@@ -20,10 +35,14 @@ p {
     padding: 20px 0 0 20px;
 }
 
-#wrapper {
+#chat-wrapper, #task-wrapper {
     border: 3px black solid;
     padding: 20px;
     border-radius: 20px;
+}
+
+#task-wrapper {
+    display: none;
 }
 
 #history {
@@ -31,4 +50,45 @@ p {
     height: 500px;
     overflow: auto;
     text-align: justify;
+}
+form {
+    margin: auto;
+}
+
+#message {
+    margin: auto;
+}
+
+#message {
+    margin: 20px auto 0 auto;
+    display: block;
+    width: 70%;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+#message:focus {
+    outline: none;
+
+}
+
+#submit-button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid black;
+    width: 20%;
+    margin: 20px auto;
+    height: 30px;
+    border-radius: 20px;
+    display: block;
+}
+
+#submit-button:hover {
+    color: #d3d3d3;
+    border: 2px solid #d3d3d3;
+}
+
+#submit-button:focus {
+    outline: none;
 }
