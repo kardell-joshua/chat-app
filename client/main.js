@@ -1,7 +1,7 @@
 var socket = io();
 
 $('document').ready(function() {
-    var user = prompt('Please enter your name: ');
+    //var user = prompt('Please enter your name: ');
     var chatBoolean = true;
 
     $('form').on('submit', function(e) {
@@ -20,7 +20,8 @@ $('document').ready(function() {
         }
 
         $('#history').append([
-            $('<p>', { class: 'time' }).text('Posted  by: ' +  user + ' at: ' + time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true})),
+            //$('<p>', { class: 'time' }).text('Posted  by: ' +  user + ' at: ' + time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true})),
+            $('<p>', { class: 'time' }).text('Posted at: ' + time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true})),
             $('<p>', { class: 'message past-message' }).text(msg),
             $('<div>', { class: 'clear' })
         ]);
