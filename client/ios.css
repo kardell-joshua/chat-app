@@ -6,20 +6,13 @@ body, html {
 h1 {
     text-align: center;
     display: inline;
+    color: black;
 }
 
 .header {
     width: 50%;
     height: 50px;
     margin: auto;
-}
-
-#header-text-chat {
-    color: #d3d3d3;
-}
-
-#header-text-chat:hover, #header-text-task:hover {
-    cursor: pointer;
 }
 
 p {
@@ -35,14 +28,10 @@ p {
     padding: 20px 0 0 20px;
 }
 
-#chat-wrapper, #task-wrapper {
+#chat-wrapper {
     border: 3px black solid;
     padding: 20px;
     border-radius: 20px;
-}
-
-#task-wrapper {
-    display: none;
 }
 
 #history {
@@ -50,6 +39,7 @@ p {
     height: 500px;
     overflow: auto;
     text-align: justify;
+    word-wrap: break-word;
 }
 form {
     margin: auto;
